@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"><rect width="100%" height="100%" fill="#050506"/><text x="60" y="120" fill="#cfe9fb" font-size="48">After</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="66" x2="1112" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112438"/>
+      <stop offset="1" stop-color="#050B14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(922 168) rotate(139) scale(520 260)">
+      <stop stop-color="#70D6FF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#70D6FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="car" x1="292" y1="392" x2="936" y2="598" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF5FF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#18314B" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#glow)"/>
+
+  <path d="M0 640L236 488H964L1200 640V800H0V640Z" fill="#09111C"/>
+
+  <path d="M288 510C306 476 345 448 408 434C496 414 614 410 735 422C814 430 876 456 911 491C928 507 929 528 914 547C891 577 853 594 822 599H413C370 599 334 584 312 565C301 554 281 532 288 510Z" fill="#0D1A28"/>
+  <path d="M304 513C318 483 357 458 416 446C500 427 616 423 731 433C808 441 866 464 897 492C909 505 911 522 901 536C883 559 850 576 821 582H421C383 582 349 570 328 553C317 545 302 525 304 513Z" fill="url(#car)"/>
+  <path d="M492 453C533 429 692 434 787 466L738 474C658 484 553 482 507 468L492 453Z" fill="#9CC8EB" fill-opacity="0.54"/>
+
+  <circle cx="474" cy="589" r="44" fill="#050A11"/>
+  <circle cx="789" cy="589" r="47" fill="#050A11"/>
+
+  <path d="M216 220C332 212 484 214 744 262" stroke="#92D6FF" stroke-opacity="0.4" stroke-width="3"/>
+  <path d="M202 278C334 266 520 276 798 336" stroke="#92D6FF" stroke-opacity="0.26" stroke-width="3"/>
+</svg>

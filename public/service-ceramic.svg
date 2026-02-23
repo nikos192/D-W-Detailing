@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect width="100%" height="100%" fill="#0b0b0d"/><text x="40" y="80" fill="#9fbfdc" font-size="36">Ceramic Coating</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="72" x2="1080" y2="704" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2230"/>
+      <stop offset="1" stop-color="#060B12"/>
+    </linearGradient>
+    <radialGradient id="cyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 166) rotate(140) scale(490 260)">
+      <stop stop-color="#58D4FF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#58D4FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shield" x1="600" y1="234" x2="600" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7EE8FF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#1B6688" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="car" x1="298" y1="421" x2="914" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#122234" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#cyan)"/>
+
+  <path d="M0 615L252 460H948L1200 615V750H0V615Z" fill="#09121D"/>
+
+  <path d="M300 487C314 456 354 430 414 414C500 392 612 389 726 400C803 408 868 433 901 466C917 483 919 501 906 518C885 547 847 564 816 569H422C380 569 340 552 317 531C306 520 295 501 300 487Z" fill="#0B1827"/>
+  <path d="M314 491C327 462 363 437 421 423C503 404 611 400 724 410C795 417 856 439 886 465C899 477 902 495 892 510C874 535 845 548 815 554H429C391 554 354 542 333 524C323 515 312 500 314 491Z" fill="url(#car)"/>
+  <path d="M498 430C539 408 690 410 779 442L729 449C662 456 560 457 514 445L498 430Z" fill="#8FB8D8" fill-opacity="0.42"/>
+  <circle cx="484" cy="559" r="45" fill="#050A11"/>
+  <circle cx="781" cy="559" r="48" fill="#050A11"/>
+
+  <path d="M600 242L738 302V418C738 491 688 555 600 586C512 555 462 491 462 418V302L600 242Z" fill="url(#shield)" stroke="#9DEEFF" stroke-opacity="0.8" stroke-width="4"/>
+  <path d="M600 279V541" stroke="#D3F8FF" stroke-opacity="0.66" stroke-width="4"/>
+  <path d="M520 366L600 446L680 366" stroke="#D3F8FF" stroke-opacity="0.72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g fill="#9DEEFF" fill-opacity="0.72">
+    <circle cx="854" cy="248" r="11"/>
+    <circle cx="910" cy="286" r="9"/>
+    <circle cx="964" cy="324" r="8"/>
+    <circle cx="1012" cy="356" r="7"/>
+    <circle cx="1050" cy="392" r="6"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="84" x2="1084" y2="734" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1C16"/>
+      <stop offset="1" stop-color="#0D090A"/>
+    </linearGradient>
+    <linearGradient id="seatL" x1="248" y1="230" x2="536" y2="622" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2C39A" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3C2C27" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="seatR" x1="664" y1="204" x2="962" y2="622" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0B786" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#2E221F" stop-opacity="0.88"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="118" y="118" width="964" height="566" rx="28" fill="#120D0F" stroke="#4D3B34" stroke-opacity="0.55" stroke-width="2"/>
+
+  <path d="M218 300C238 256 278 230 333 230H401C455 230 494 252 512 292L548 378V644H188V392L218 300Z" fill="url(#seatL)"/>
+  <path d="M662 270C686 230 725 206 784 206H850C906 206 951 230 975 267L1022 364V644H618V382L662 270Z" fill="url(#seatR)"/>
+
+  <rect x="296" y="346" width="168" height="19" rx="9.5" fill="#F0BE95" fill-opacity="0.5"/>
+  <rect x="728" y="325" width="208" height="18" rx="9" fill="#F0BE95" fill-opacity="0.45"/>
+
+  <path d="M98 226C208 258 334 324 442 434" stroke="#FFCE9D" stroke-opacity="0.44" stroke-width="11" stroke-linecap="round"/>
+</svg>

@@ -2,45 +2,106 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import ServiceCard from '../components/ServiceCard'
+import { business, services } from '../data/siteContent'
 
-const services = [
-  {title:'Exterior Detail', desc:'Wash, decontaminate, polish and protect exterior surfaces.', time:'2-4 hours', img:'/service-exterior.svg'},
-  {title:'Interior Detail', desc:'Deep clean seats, carpets, trim, and sanitise interior areas.', time:'2-3 hours', img:'/service-interior.svg'},
-  {title:'Full Detail', desc:'Comprehensive interior + exterior premium detailing package.', time:'4-6 hours', img:'/service-full.svg'},
-  {title:'Paint Correction', desc:'Multi-stage polishing to remove swirls and restore gloss.', time:'Varies by vehicle', img:'/service-paint.svg'},
-  {title:'Ceramic Coating', desc:'High-grade ceramic for long-term protection and gloss.', time:'1-2 days', img:'/service-ceramic.svg'},
+const process = [
+  {
+    title: 'Inspect & Plan',
+    desc: 'We assess paint condition, interior wear and contamination before selecting the right detailing path.',
+  },
+  {
+    title: 'Detail & Protect',
+    desc: 'Precision cleaning, restoration and protective layers are applied using safe, professional products.',
+  },
+  {
+    title: 'Final Quality Check',
+    desc: 'Every service ends with a complete finish inspection so your vehicle leaves spotless and protected.',
+  },
 ]
 
-export default function Services(){
+const assurance = [
+  'Transparent package pricing before booking',
+  'Paint-safe methods and tested products only',
+  'Consistent quality checks before handover',
+]
+
+export default function Services() {
   return (
     <>
       <Head>
         <title>Services | D&amp;W Detailers</title>
+        <meta
+          name="description"
+          content="Explore interior, exterior, full detail, paint correction and ceramic coating packages from D&W Detailers in Brisbane."
+        />
       </Head>
-      <div className="min-h-screen bg-gradient-to-b from-black via-charcoal to-black">
-        <Navbar />
-        <main className="max-w-5xl mx-auto px-6 py-12">
-          <h1 className="text-3xl font-bold">Our Services</h1>
-          <p className="text-gray-400 mt-2">Premium packages designed to protect and restore your vehicle.</p>
 
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map(s => (
-              <div key={s.title} className="p-6 bg-black/50 glass rounded-lg">
-                <div className="flex gap-4">
-                  <div className="w-28 h-20 bg-cover rounded-md" style={{backgroundImage:`url(${s.img})`}} />
-                  <div>
-                    <h3 className="text-xl font-semibold">{s.title}</h3>
-                    <p className="text-gray-300 mt-2">{s.desc}</p>
-                    <div className="mt-4 text-sm text-gray-400">Estimated duration: {s.time}</div>
-                    <div className="mt-4">
-                      <Link href="/contact" className="px-4 py-2 bg-accent text-white rounded-md font-medium hover:opacity-90 transition-opacity">Book Now</Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div className="site-shell min-h-screen">
+        <Navbar />
+
+        <main className="container-site py-12 md:py-16">
+          <div className="kicker">Our Services</div>
+          <h1 className="font-display section-title mt-4">Precision Packages. Premium Results.</h1>
+          <p className="text-[#b6bfcc] mt-4 max-w-3xl leading-relaxed">
+            Choose the level of care your vehicle needs now, then scale up whenever you are ready for deeper restoration and longer-term protection.
+          </p>
+
+          <div className="mt-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+            {services.map((service) => (
+              <ServiceCard key={service.title} {...service} />
             ))}
           </div>
+
+          <section className="section-space panel rounded-3xl p-6 md:p-9">
+            <div className="flex flex-wrap gap-4 items-end justify-between">
+              <h2 className="font-display text-[clamp(2rem,5vw,3.1rem)] leading-[0.92] m-0">Our Detailing Process</h2>
+              <Link href="/contact" className="btn-primary !py-2.5">
+                Request Your Quote
+              </Link>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {process.map((step, index) => (
+                <article key={step.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                  <div className="font-display text-4xl text-[#f6c66c]">0{index + 1}</div>
+                  <h3 className="mt-2 text-lg font-semibold">{step.title}</h3>
+                  <p className="mt-2 text-sm text-[#b5becc] leading-relaxed">{step.desc}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="section-space grid grid-cols-1 lg:grid-cols-5 gap-6 items-start pb-6">
+            <div className="lg:col-span-3 panel rounded-3xl p-6 md:p-8">
+              <div className="kicker">Booking Confidence</div>
+              <h3 className="font-display text-[clamp(2rem,5vw,3.2rem)] mt-4 leading-[0.9]">Why Clients Keep Coming Back</h3>
+              <ul className="mt-6 space-y-3 text-sm text-[#cad3df]">
+                {assurance.map((item) => (
+                  <li key={item} className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <aside className="lg:col-span-2 panel rounded-3xl p-6">
+              <div className="text-xs uppercase tracking-[0.16em] text-[#f6c66c]">Need Help Choosing?</div>
+              <p className="mt-3 text-sm text-[#b8c1cf] leading-relaxed">
+                Tell us your car type and condition and we will point you to the right package before booking.
+              </p>
+              <div className="mt-6 flex flex-col gap-3">
+                <Link href="/contact" className="btn-primary w-full">
+                  Get A Recommended Package
+                </Link>
+                <a href={`tel:${business.phone.replace(/[^+\d]/g, '')}`} className="btn-ghost w-full">
+                  Call {business.phone}
+                </a>
+              </div>
+            </aside>
+          </section>
         </main>
+
         <Footer />
       </div>
     </>

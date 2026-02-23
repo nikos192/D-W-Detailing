@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect width="100%" height="100%" fill="#0b0b0d"/><text x="40" y="80" fill="#9fbfdc" font-size="36">Full Detail</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="left" x1="56" y1="99" x2="632" y2="725" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12263B"/>
+      <stop offset="1" stop-color="#07111C"/>
+    </linearGradient>
+    <linearGradient id="right" x1="690" y1="53" x2="1168" y2="712" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C1E1A"/>
+      <stop offset="1" stop-color="#130D0E"/>
+    </linearGradient>
+    <linearGradient id="car" x1="304" y1="401" x2="903" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7ECF8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#131E2F" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="splitGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(598 360) rotate(90) scale(320 88)">
+      <stop stop-color="#F6C66C" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#F6C66C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#left)"/>
+  <rect x="600" width="600" height="750" fill="url(#right)"/>
+  <rect width="1200" height="750" fill="url(#splitGlow)"/>
+
+  <path d="M0 611L255 454H945L1200 611V750H0V611Z" fill="#0A0F16"/>
+  <path d="M598 448L610 449L638 750H562L590 449L598 448Z" fill="#F6C66C" fill-opacity="0.6"/>
+
+  <path d="M300 484C316 452 356 425 416 410C504 388 620 383 736 394C812 402 874 429 909 463C926 480 928 501 915 518C894 547 855 563 824 568H426C384 568 344 552 322 530C309 517 294 498 300 484Z" fill="#0C1724"/>
+  <path d="M314 488C327 458 366 432 424 418C509 398 620 393 733 404C804 412 862 436 893 464C906 476 908 495 899 508C884 532 850 548 823 553H431C392 553 355 541 334 523C322 514 313 500 314 488Z" fill="url(#car)"/>
+  <path d="M498 424C539 401 690 404 781 437L730 444C664 452 560 453 513 440L498 424Z" fill="#97ADC9" fill-opacity="0.45"/>
+
+  <circle cx="483" cy="559" r="45" fill="#060A11"/>
+  <circle cx="780" cy="559" r="48" fill="#060A11"/>
+  <circle cx="483" cy="559" r="17" fill="#8A9AB2"/>
+  <circle cx="780" cy="559" r="17" fill="#8A9AB2"/>
+
+  <g fill="#8FE3FF" fill-opacity="0.62">
+    <circle cx="172" cy="198" r="8"/>
+    <circle cx="238" cy="248" r="6"/>
+    <circle cx="286" cy="295" r="7"/>
+  </g>
+
+  <g fill="#FFD5A3" fill-opacity="0.5">
+    <circle cx="980" cy="172" r="7"/>
+    <circle cx="922" cy="223" r="6"/>
+    <circle cx="870" cy="274" r="5"/>
+  </g>
+</svg>

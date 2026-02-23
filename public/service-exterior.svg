@@ -1,1 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><rect width="100%" height="100%" fill="#0b0b0d"/><text x="40" y="80" fill="#9fbfdc" font-size="36">Exterior Detail</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="102" y1="94" x2="1085" y2="704" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132337"/>
+      <stop offset="1" stop-color="#060B14"/>
+    </linearGradient>
+    <radialGradient id="wash" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 180) rotate(12) scale(460 250)">
+      <stop stop-color="#36B8FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#36B8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="car" x1="304" y1="395" x2="924" y2="598" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4EEF9" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#17273D" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="shadow" x="248" y="334" width="724" height="286" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#wash)"/>
+  <path d="M0 602L280 438H920L1200 602V750H0V602Z" fill="#0A1320"/>
+
+  <path d="M66 180C190 216 344 282 490 398" stroke="#7EE0FF" stroke-opacity="0.66" stroke-width="16" stroke-linecap="round"/>
+  <path d="M90 122C242 182 384 250 530 380" stroke="#7EE0FF" stroke-opacity="0.45" stroke-width="11" stroke-linecap="round"/>
+  <path d="M120 88C275 152 420 230 580 360" stroke="#7EE0FF" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <path d="M300 482C317 446 360 415 423 398C514 373 633 367 751 380C830 389 891 417 925 454C943 475 942 501 925 521C904 548 868 564 835 569H435C390 569 344 553 318 529C303 515 292 496 300 482Z" fill="#0C1726"/>
+    <path d="M314 488C327 456 367 428 429 413C517 390 632 385 748 398C823 406 881 431 912 463C928 480 928 500 915 516C898 537 864 551 835 554H441C399 554 357 541 333 521C320 510 311 496 314 488Z" fill="url(#car)"/>
+    <path d="M504 420C545 396 703 399 794 433L742 442C667 453 575 450 523 438L504 420Z" fill="#81A2C8" fill-opacity="0.44"/>
+    <circle cx="486" cy="559" r="46" fill="#050A12"/>
+    <circle cx="793" cy="559" r="49" fill="#050A12"/>
+    <circle cx="486" cy="559" r="18" fill="#8D9EB4"/>
+    <circle cx="793" cy="559" r="18" fill="#8D9EB4"/>
+  </g>
+
+  <g fill="#8EE6FF" fill-opacity="0.65">
+    <circle cx="214" cy="242" r="10"/>
+    <circle cx="292" cy="292" r="8"/>
+    <circle cx="373" cy="328" r="11"/>
+    <circle cx="458" cy="377" r="7"/>
+    <circle cx="251" cy="166" r="6"/>
+  </g>
+</svg>
