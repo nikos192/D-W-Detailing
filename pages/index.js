@@ -42,10 +42,10 @@ export default function Home() {
         <Navbar />
 
         <main>
-          <section className="container-site pt-10 pb-16 md:pt-14 md:pb-20 grid grid-cols-1 lg:grid-cols-12 gap-9 items-center">
+          <section className="container-site pt-10 pb-16 md:pt-14 md:pb-20 grid grid-cols-1 lg:grid-cols-12 gap-9 items-start lg:items-center">
             <div className="lg:col-span-7">
               <div className="kicker reveal">Brisbane Premium Auto Care</div>
-              <h1 className="font-display section-title reveal reveal-delay-1 text-[clamp(3.1rem,11vw,7.2rem)] mt-4 leading-[0.88]">
+              <h1 className="font-display section-title reveal reveal-delay-1 text-[clamp(3.1rem,11vw,7.2rem)] mt-2 lg:mt-3 leading-[0.88]">
                 DETAILING
                 <span className="block text-[#f6c66c]">THAT FEELS NEW</span>
               </h1>
